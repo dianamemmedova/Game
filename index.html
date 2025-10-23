@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tik-Tak-Tok</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tik Tak Tok</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>🎮 Tik Tak Tok</h1>
+        <div class="status" id="status">Oyunçu X başlayır</div>
+        
+        <div class="board" id="board">
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+        </div>
+
+        <div class="buttons">
+            <button class="reset" onclick="resetGame()">🔄 Yenidən Başla</button>
+            <button class="mode" onclick="toggleMode()">🤖 Kompüter ilə oyna</button>
+        </div>
+
+        <div class="score">
+            <div class="score-box">
+                <h3>Oyunçu X</h3>
+                <p id="scoreX">0</p>
+            </div>
+            <div class="score-box">
+                <h3>Heç-heçə</h3>
+                <p id="scoreDraw">0</p>
+            </div>
+            <div class="score-box">
+                <h3>Oyunçu O</h3>
+                <p id="scoreO">0</p>
+            </div>
+        </div>
+    </div>
+
+   
 </body>
 </html>
